@@ -2,11 +2,16 @@
 
 A modern, high-energy podcast landing page built with cutting-edge web technologies. This project showcases a visually stunning, fully responsive design with smooth animations and an exceptional user experience.
 
+## 🌐 Live Demo
+
+**[View Live Demo →](https://podcast-experience.vercel.app/)**
+
 ![Podcast Experience](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.17-38B2AC?logo=tailwind-css)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel)
 
 ## 🚀 Features
 
