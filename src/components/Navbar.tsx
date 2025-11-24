@@ -24,7 +24,7 @@ const Navbar = () => {
                 </a>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center gap-8 font-medium text-sm uppercase tracking-wide">
+                <div className="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wide">
                     <a href="#home" className="hover:text-yellow-400 transition-colors">{t('navbar.home')}</a>
                     <a href="#about" className="hover:text-yellow-400 transition-colors">{t('navbar.about')}</a>
                     <a href="#audio" className="hover:text-yellow-400 transition-colors">{t('navbar.audio')}</a>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className="flex items-center gap-4 md:hidden">
+                <div className="flex items-center gap-4 lg:hidden">
                     {/* Mobile Language Switcher */}
                     <div className="flex items-center gap-2 mr-2">
                         <button
@@ -83,7 +83,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu Overlay */}
                 {isOpen && (
-                    <div className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 md:hidden">
+                    <div className="fixed top-20 left-0 w-full h-[calc(100vh-5rem)] bg-tertiary z-40 flex flex-col items-center justify-center gap-8 lg:hidden border-t border-gray-100">
                         <a href="#home" onClick={toggleMenu} className="text-2xl font-black uppercase hover:text-yellow-400 transition-colors">{t('navbar.home')}</a>
                         <a href="#about" onClick={toggleMenu} className="text-2xl font-black uppercase hover:text-yellow-400 transition-colors">{t('navbar.about')}</a>
                         <a href="#audio" onClick={toggleMenu} className="text-2xl font-black uppercase hover:text-yellow-400 transition-colors">{t('navbar.audio')}</a>
