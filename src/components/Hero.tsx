@@ -1,9 +1,11 @@
 import React from 'react';
 import { Play } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="relative w-full overflow-hidden">
             {/* Main Content */}
@@ -15,7 +17,7 @@ const Hero = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-none mb-4 md:mb-2"
                     >
-                        Podcast
+                        {t('hero.title')}
                     </motion.h1>
                     <motion.div
                         initial={{ y: 50, opacity: 0 }}
@@ -23,12 +25,12 @@ const Hero = () => {
                         transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
                         className="flex items-center justify-between w-full max-w-4xl mx-auto mb-12"
                     >
-                        <span className="text-xl md:text-3xl font-bold uppercase tracking-widest">Experience</span>
+                        <span className="text-xl md:text-3xl font-bold uppercase tracking-widest">{t('hero.subtitle')}</span>
                         <button className="flex items-center gap-2 bg-primary px-6 py-2 rounded-full font-bold uppercase hover:bg-yellow-400 transition-colors">
                             <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                                 <Play size={16} className="text-white ml-1" />
                             </div>
-                            Start Listening
+                            {t('hero.startListening')}
                         </button>
                     </motion.div>
                 </div>
@@ -78,16 +80,16 @@ const Hero = () => {
                     {/* Content repeated for seamless loop */}
                     {[...Array(2)].map((_, i) => (
                         <React.Fragment key={i}>
-                            <span className="bg-orange-500 px-2 py-1 rounded text-black">Business</span>
-                            <span>Technology</span>
-                            <span className="bg-blue-500 px-2 py-1 rounded text-black">Health Care</span>
-                            <span>Self Grow</span>
-                            <span className="bg-pink-500 px-2 py-1 rounded text-black">Crypto NFT</span>
-                            <span className="bg-orange-500 px-2 py-1 rounded text-black">Business</span>
-                            <span>Technology</span>
-                            <span className="bg-blue-500 px-2 py-1 rounded text-black">Health Care</span>
-                            <span>Self Grow</span>
-                            <span className="bg-pink-500 px-2 py-1 rounded text-black">Crypto NFT</span>
+                            <span className="bg-orange-500 px-2 py-1 rounded text-black">{t('hero.tags.business')}</span>
+                            <span>{t('hero.tags.technology')}</span>
+                            <span className="bg-blue-500 px-2 py-1 rounded text-black">{t('hero.tags.healthCare')}</span>
+                            <span>{t('hero.tags.selfGrow')}</span>
+                            <span className="bg-pink-500 px-2 py-1 rounded text-black">{t('hero.tags.cryptoNft')}</span>
+                            <span className="bg-orange-500 px-2 py-1 rounded text-black">{t('hero.tags.business')}</span>
+                            <span>{t('hero.tags.technology')}</span>
+                            <span className="bg-blue-500 px-2 py-1 rounded text-black">{t('hero.tags.healthCare')}</span>
+                            <span>{t('hero.tags.selfGrow')}</span>
+                            <span className="bg-pink-500 px-2 py-1 rounded text-black">{t('hero.tags.cryptoNft')}</span>
                         </React.Fragment>
                     ))}
                 </motion.div>
@@ -100,16 +102,16 @@ const Hero = () => {
                 >
                     {[...Array(2)].map((_, i) => (
                         <React.Fragment key={i}>
-                            <span>Business</span>
-                            <span className="bg-green-500 px-2 py-1 rounded text-black">Technology</span>
-                            <span>Health Care</span>
-                            <span className="bg-purple-500 px-2 py-1 rounded text-black">Self Grow</span>
-                            <span>Crypto NFT</span>
-                            <span>Business</span>
-                            <span className="bg-green-500 px-2 py-1 rounded text-black">Technology</span>
-                            <span>Health Care</span>
-                            <span className="bg-purple-500 px-2 py-1 rounded text-black">Self Grow</span>
-                            <span>Crypto NFT</span>
+                            <span>{t('hero.tags.business')}</span>
+                            <span className="bg-green-500 px-2 py-1 rounded text-black">{t('hero.tags.technology')}</span>
+                            <span>{t('hero.tags.healthCare')}</span>
+                            <span className="bg-purple-500 px-2 py-1 rounded text-black">{t('hero.tags.selfGrow')}</span>
+                            <span>{t('hero.tags.cryptoNft')}</span>
+                            <span>{t('hero.tags.business')}</span>
+                            <span className="bg-green-500 px-2 py-1 rounded text-black">{t('hero.tags.technology')}</span>
+                            <span>{t('hero.tags.healthCare')}</span>
+                            <span className="bg-purple-500 px-2 py-1 rounded text-black">{t('hero.tags.selfGrow')}</span>
+                            <span>{t('hero.tags.cryptoNft')}</span>
                         </React.Fragment>
                     ))}
                 </motion.div>

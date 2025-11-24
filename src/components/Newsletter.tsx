@@ -1,6 +1,9 @@
-
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Newsletter = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="bg-black py-20">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -8,14 +11,14 @@ const Newsletter = () => {
 
                     <div className="relative z-10 max-w-xl">
                         <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase leading-none mb-8 text-white drop-shadow-lg">
-                            Start Your<br />Conversation<br />Journey!
+                            {t('newsletter.ctaTitle')}
                         </h2>
                         <div className="flex gap-4">
                             <button className="bg-white text-black px-8 py-3 rounded-full font-bold uppercase hover:bg-gray-100 transition-colors">
-                                Get Started
+                                {t('newsletter.getStarted')}
                             </button>
                             <button className="border-2 border-white text-white px-8 py-3 rounded-full font-bold uppercase hover:bg-white/10 transition-colors">
-                                Learn More
+                                {t('newsletter.learnMore')}
                             </button>
                         </div>
                     </div>

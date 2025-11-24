@@ -1,39 +1,43 @@
+import React from 'react';
 import { Play } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const LatestEpisodes = () => {
+    const { t } = useTranslation();
+
     const episodes = [
         {
             id: 1,
-            title: "Product Design",
+            title: t('latestEpisodes.items.ep1.title'),
             image: "/assets/episode_thumbnail_tech_1763920816828.png",
-            category: "Design",
-            date: "Sep 28, 2025"
+            category: t('latestEpisodes.items.ep1.category'),
+            date: t('latestEpisodes.items.ep1.date')
         },
         {
             id: 2,
-            title: "Music Theory",
+            title: t('latestEpisodes.items.ep2.title'),
             image: "/assets/hero_man_headphones_1763920733752.png",
-            category: "Music",
-            date: "Sep 29, 2025"
+            category: t('latestEpisodes.items.ep2.category'),
+            date: t('latestEpisodes.items.ep2.date')
         },
         {
             id: 3,
-            title: "Tech Trends",
+            title: t('latestEpisodes.items.ep3.title'),
             image: "/assets/tech_trends_episode.jpg",
-            category: "Technology",
-            date: "Sep 30, 2025"
+            category: t('latestEpisodes.items.ep3.category'),
+            date: t('latestEpisodes.items.ep3.date')
         }
     ];
 
     return (
         <div className="max-w-7xl mx-auto px-6 py-12 md:px-12">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8">
-                <h2 className="text-3xl md:text-4xl font-black uppercase">Latest<br />Episodes</h2>
+                <h2 className="text-3xl md:text-4xl font-black uppercase">{t('latestEpisodes.title')}<br />{t('latestEpisodes.subtitle')}</h2>
                 <div className="flex flex-wrap gap-4 text-xs md:text-sm font-bold uppercase text-gray-400">
-                    <button className="text-black border-b-2 border-black pb-1">All</button>
-                    <button className="hover:text-black transition-colors">Design</button>
-                    <button className="hover:text-black transition-colors">Business</button>
-                    <button className="hover:text-black transition-colors">Tech</button>
+                    <button className="text-black border-b-2 border-black pb-1">{t('latestEpisodes.filters.all')}</button>
+                    <button className="hover:text-black transition-colors">{t('latestEpisodes.filters.design')}</button>
+                    <button className="hover:text-black transition-colors">{t('latestEpisodes.filters.business')}</button>
+                    <button className="hover:text-black transition-colors">{t('latestEpisodes.filters.tech')}</button>
                 </div>
             </div>
 

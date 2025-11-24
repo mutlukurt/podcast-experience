@@ -1,6 +1,10 @@
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import React from 'react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="max-w-7xl mx-auto px-6 py-20 md:px-12">
             <div className="bg-black rounded-[3rem] p-8 md:p-16 overflow-hidden relative">
@@ -12,10 +16,10 @@ const Contact = () => {
                             Get in Touch
                         </span>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-black uppercase leading-none mb-8">
-                            Let's Start a<br />Conversation
+                            {t('contact.title')}<br />{t('contact.subtitle')}
                         </h2>
                         <p className="text-gray-400 text-lg mb-12 max-w-md">
-                            Have a question, suggestion, or just want to say hello? We'd love to hear from you. Fill out the form or reach out directly.
+                            {t('contact.description')}
                         </p>
 
                         <div className="space-y-8">
@@ -24,7 +28,7 @@ const Contact = () => {
                                     <Mail className="text-yellow-400" size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-xl mb-1">Email Us</h3>
+                                    <h3 className="font-bold text-xl mb-1">{t('contact.email')}</h3>
                                     <p className="text-gray-400">hello@podcastexperience.com</p>
                                     <p className="text-gray-400">support@podcastexperience.com</p>
                                 </div>
@@ -35,7 +39,7 @@ const Contact = () => {
                                     <Phone className="text-yellow-400" size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-xl mb-1">Call Us</h3>
+                                    <h3 className="font-bold text-xl mb-1">{t('contact.phone')}</h3>
                                     <p className="text-gray-400">+1 (555) 123-4567</p>
                                     <p className="text-gray-400">Mon-Fri, 9am - 6pm EST</p>
                                 </div>
@@ -46,7 +50,7 @@ const Contact = () => {
                                     <MapPin className="text-yellow-400" size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-xl mb-1">Visit Us</h3>
+                                    <h3 className="font-bold text-xl mb-1">{t('contact.location')}</h3>
                                     <p className="text-gray-400">123 Podcast Avenue, Suite 100</p>
                                     <p className="text-gray-400">New York, NY 10001</p>
                                 </div>
@@ -59,56 +63,57 @@ const Contact = () => {
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label htmlFor="firstName" className="text-sm font-bold uppercase ml-1">First Name</label>
+                                    <label htmlFor="firstName" className="text-sm font-bold uppercase ml-1">{t('contact.form.firstName')}</label>
                                     <input
                                         type="text"
                                         id="firstName"
                                         className="w-full bg-gray-100 border-2 border-transparent focus:border-black rounded-xl px-4 py-3 outline-none transition-colors font-medium"
-                                        placeholder="John"
+                                        placeholder={t('contact.form.namePlaceholder')}
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label htmlFor="lastName" className="text-sm font-bold uppercase ml-1">Last Name</label>
+                                    <label htmlFor="lastName" className="text-sm font-bold uppercase ml-1">{t('contact.form.lastName')}</label>
                                     <input
                                         type="text"
                                         id="lastName"
                                         className="w-full bg-gray-100 border-2 border-transparent focus:border-black rounded-xl px-4 py-3 outline-none transition-colors font-medium"
-                                        placeholder="Doe"
+                                        placeholder={t('contact.form.lastNamePlaceholder')}
                                     />
                                 </div>
                             </div>
 
                             <div className="space-y-2">
-                                <label htmlFor="email" className="text-sm font-bold uppercase ml-1">Email Address</label>
+                                <label htmlFor="email" className="text-sm font-bold uppercase ml-1">{t('contact.form.email')}</label>
                                 <input
                                     type="email"
                                     id="email"
                                     className="w-full bg-gray-100 border-2 border-transparent focus:border-black rounded-xl px-4 py-3 outline-none transition-colors font-medium"
-                                    placeholder="john@example.com"
+                                    placeholder={t('contact.form.emailPlaceholder')}
+                                    dir="ltr"
                                 />
                             </div>
 
                             <div className="space-y-2">
-                                <label htmlFor="subject" className="text-sm font-bold uppercase ml-1">Subject</label>
+                                <label htmlFor="subject" className="text-sm font-bold uppercase ml-1">{t('contact.form.subject')}</label>
                                 <select
                                     id="subject"
                                     className="w-full bg-gray-100 border-2 border-transparent focus:border-black rounded-xl px-4 py-3 outline-none transition-colors font-medium appearance-none"
                                 >
-                                    <option value="">Select a topic</option>
-                                    <option value="collaboration">Collaboration</option>
-                                    <option value="feedback">Feedback</option>
-                                    <option value="support">Support</option>
-                                    <option value="other">Other</option>
+                                    <option value="">{t('contact.form.subjectPlaceholder')}</option>
+                                    <option value="collaboration">{t('contact.form.subjects.collaboration')}</option>
+                                    <option value="feedback">{t('contact.form.subjects.feedback')}</option>
+                                    <option value="support">{t('contact.form.subjects.support')}</option>
+                                    <option value="other">{t('contact.form.subjects.other')}</option>
                                 </select>
                             </div>
 
                             <div className="space-y-2">
-                                <label htmlFor="message" className="text-sm font-bold uppercase ml-1">Message</label>
+                                <label htmlFor="message" className="text-sm font-bold uppercase ml-1">{t('contact.form.message')}</label>
                                 <textarea
                                     id="message"
                                     rows={4}
                                     className="w-full bg-gray-100 border-2 border-transparent focus:border-black rounded-xl px-4 py-3 outline-none transition-colors font-medium resize-none"
-                                    placeholder="How can we help you?"
+                                    placeholder={t('contact.form.messagePlaceholder')}
                                 ></textarea>
                             </div>
 
@@ -116,7 +121,7 @@ const Contact = () => {
                                 type="submit"
                                 className="w-full bg-yellow-400 text-black font-black uppercase py-4 rounded-xl hover:bg-yellow-300 transition-colors flex items-center justify-center gap-2 group"
                             >
-                                Send Message
+                                {t('contact.form.submit')}
                                 <Send size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </form>

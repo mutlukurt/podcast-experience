@@ -1,0 +1,169 @@
+{
+    "navbar": {
+        "home": "Início",
+        "about": "Sobre",
+        "audio": "Áudio",
+        "talk": "Conversa",
+        "contact": "Contato",
+        "startHere": "Comece Aqui",
+        "skipToContent": "Pular para o conteúdo principal",
+        "menu": "Menu"
+    },
+    "hero": {
+        "title": "Podcast",
+        "subtitle": "Experiência",
+        "startListening": "Começar a Ouvir",
+        "tags": {
+            "business": "Negócios",
+            "technology": "Tecnologia",
+            "healthCare": "Saúde",
+            "selfGrow": "Crescimento",
+            "cryptoNft": "Cripto NFT"
+        }
+    },
+    "stats": {
+        "supportedBy": "Apoiado Por:",
+        "listeners": "Ouvintes",
+        "stream": "Stream",
+        "users": "Usuários",
+        "bestPlatform": "Melhor Plataforma",
+        "forPodcaster": "Para Podcasters"
+    },
+    "categories": {
+        "title": "Explorar",
+        "subtitle": "Categorias",
+        "count": "25+ Categorias",
+        "creative": "Criativo",
+        "technology": "Tecnologia",
+        "items": {
+            "dailyLife": "Dia a Dia",
+            "culture": "Cultura",
+            "tech": "Tech",
+            "music": "Música",
+            "business": "Negócios",
+            "comedy": "Comédia"
+        }
+    },
+    "featuredEpisode": {
+        "title": "Episódio em Destaque",
+        "subtitle": "Esta Semana",
+        "date": "23 Set, 2025",
+        "episodeTitle": "Ganhos com",
+        "episodeSubtitle": "Stream NFT",
+        "description": "Explore o futuro da propriedade digital e como os criadores estão monetizando seu conteúdo através de NFTs. Um mergulho profundo na economia cripto.",
+        "startListening": "Começar a Ouvir"
+    },
+    "leadingPodcaster": {
+        "title": "Podcaster",
+        "subtitle": "Líder",
+        "communityTitle": "Construa Uma Comunidade",
+        "communityDesc": "Aprenda os segredos de construir uma comunidade leal em torno do seu conteúdo. De estratégias de engajamento à monetização, cobrimos tudo.",
+        "episodeCount": "24 Episódios",
+        "description": "Descubra as vozes que moldam o futuro do áudio. Nossos principais podcasters trazem o conteúdo mais envolvente e perspicaz de todo o mundo.",
+        "bestEpisodes": "Melhores Episódios",
+        "tags": {
+            "dailyLife": "Dia a Dia",
+            "school": "Escola",
+            "performer": "Artista",
+            "art": "Arte"
+        }
+    },
+    "newsletter": {
+        "ctaTitle": "Comece Sua Jornada de Conversa!",
+        "getStarted": "Começar",
+        "learnMore": "Saiba Mais",
+        "title": "Inscreva-se Para",
+        "subtitle": "Atualizações",
+        "description": "Junte-se à nossa comunidade de mais de 100 mil ouvintes e nunca perca um episódio. Obtenha conteúdo exclusivo e acesso antecipado.",
+        "placeholder": "Digite seu email",
+        "button": "Inscrever-se"
+    },
+    "latestEpisodes": {
+        "title": "Últimos",
+        "subtitle": "Episódios",
+        "filters": {
+            "all": "Todos",
+            "business": "Negócios",
+            "tech": "Tech",
+            "design": "Design"
+        },
+        "items": {
+            "ep1": {
+                "title": "Design de Produto",
+                "category": "Design",
+                "date": "28 Set, 2025",
+                "duration": "45 min"
+            },
+            "ep2": {
+                "title": "Teoria Musical",
+                "category": "Música",
+                "date": "29 Set, 2025",
+                "duration": "32 min"
+            },
+            "ep3": {
+                "title": "Tendências Tech",
+                "category": "Tecnologia",
+                "date": "30 Set, 2025",
+                "duration": "55 min"
+            }
+        }
+    },
+    "artistHighlight": {
+        "title": "Destaque do Artista",
+        "subtitle": "Da Semana",
+        "description": "As mentes criativas por trás dos seus episódios favoritos. Nossa equipe de profissionais dedicados traz o melhor conteúdo toda semana.",
+        "items": {
+            "artist1": {
+                "name": "John Doe",
+                "role": "Apresentadora e Produtora"
+            },
+            "artist2": {
+                "name": "Jane Smith",
+                "role": "Especialista em Tecnologia"
+            },
+            "artist3": {
+                "name": "Joy Unbound",
+                "role": "Escritora de Comédia"
+            },
+            "artist4": {
+                "name": "Sarah Lee",
+                "role": "Convidada"
+            }
+        }
+    },
+    "contact": {
+        "title": "Vamos Começar Uma",
+        "subtitle": "Conversa",
+        "description": "Tem uma pergunta, sugestão ou apenas quer dizer olá? Adoraríamos ouvir de você. Entre em contato conosco através de qualquer um dos canais abaixo.",
+        "email": "Envie um Email",
+        "phone": "Ligue para Nós",
+        "location": "Visite-nos",
+        "form": {
+            "firstName": "Nome",
+            "lastName": "Sobrenome",
+            "namePlaceholder": "João",
+            "lastNamePlaceholder": "Silva",
+            "email": "Endereço de Email",
+            "emailPlaceholder": "joao@exemplo.com",
+            "subject": "Assunto",
+            "subjectPlaceholder": "Selecione um tópico",
+            "subjects": {
+                "collaboration": "Colaboração",
+                "feedback": "Feedback",
+                "support": "Suporte",
+                "other": "Outro"
+            },
+            "message": "Mensagem",
+            "messagePlaceholder": "Como podemos ajudar?",
+            "submit": "Enviar Mensagem"
+        }
+    },
+    "footer": {
+        "terms": "Termos",
+        "sitemap": "Mapa do Site",
+        "privacy": "Privacidade",
+        "copyright": "© 2025 Mutlu Kurt. Licenciado sob Licença MIT.",
+        "designedBy": "Design por Mutlu"
+    },
+    "backToTop": "Voltar ao topo"
+}

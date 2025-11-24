@@ -1,10 +1,14 @@
+import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ArtistHighlight = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="max-w-7xl mx-auto px-6 py-12 md:px-12 mb-20">
             <div className="flex justify-between items-start mb-12">
-                <h2 className="text-4xl font-black uppercase">Artist Highlight<br />Of The Week</h2>
+                <h2 className="text-4xl font-black uppercase">{t('artistHighlight.title')}<br />{t('artistHighlight.subtitle')}</h2>
                 <ArrowUpRight size={32} />
             </div>
 
@@ -17,7 +21,7 @@ const ArtistHighlight = () => {
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                     />
                     <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/50 to-transparent">
-                        <h3 className="text-white font-black uppercase text-xl">John Doe</h3>
+                        <h3 className="text-white font-black uppercase text-xl">{t('artistHighlight.items.artist1.name')}</h3>
                     </div>
                 </div>
 
@@ -29,7 +33,7 @@ const ArtistHighlight = () => {
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                     />
                     <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/50 to-transparent">
-                        <h3 className="text-white font-black uppercase text-xl">Jane Smith</h3>
+                        <h3 className="text-white font-black uppercase text-xl">{t('artistHighlight.items.artist2.name')}</h3>
                     </div>
                 </div>
 
@@ -41,7 +45,7 @@ const ArtistHighlight = () => {
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                     />
                     <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/50 to-transparent">
-                        <h3 className="text-white font-black uppercase text-xl">Joy Unbound</h3>
+                        <h3 className="text-white font-black uppercase text-xl">{t('artistHighlight.items.artist3.name')}</h3>
                     </div>
                 </div>
 
@@ -53,7 +57,7 @@ const ArtistHighlight = () => {
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                     />
                     <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/50 to-transparent">
-                        <h3 className="text-white font-black uppercase text-xl">Sarah Lee</h3>
+                        <h3 className="text-white font-black uppercase text-xl">{t('artistHighlight.items.artist4.name')}</h3>
                     </div>
                 </div>
             </div>

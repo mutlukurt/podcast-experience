@@ -1,0 +1,169 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "audio": "Audio",
+        "talk": "Talk",
+        "contact": "Contact",
+        "startHere": "Start Here",
+        "skipToContent": "Skip to main content",
+        "menu": "Menu"
+    },
+    "hero": {
+        "title": "Podcast",
+        "subtitle": "Experience",
+        "startListening": "Start Listening",
+        "tags": {
+            "business": "Business",
+            "technology": "Technology",
+            "healthCare": "Health Care",
+            "selfGrow": "Self Grow",
+            "cryptoNft": "Crypto NFT"
+        }
+    },
+    "stats": {
+        "supportedBy": "Supported By:",
+        "listeners": "Listeners",
+        "stream": "Stream",
+        "users": "Users",
+        "bestPlatform": "Best Platform",
+        "forPodcaster": "For Podcaster"
+    },
+    "categories": {
+        "title": "Explore",
+        "subtitle": "Categories",
+        "count": "25+ Categories",
+        "creative": "Creative",
+        "technology": "Technology",
+        "items": {
+            "dailyLife": "Daily Life",
+            "culture": "Culture",
+            "tech": "Tech",
+            "music": "Music",
+            "business": "Business",
+            "comedy": "Comedy"
+        }
+    },
+    "featuredEpisode": {
+        "title": "Feature Episode For",
+        "subtitle": "This Week",
+        "date": "Sep 23, 2025",
+        "episodeTitle": "NFT Stream",
+        "episodeSubtitle": "Earnings",
+        "description": "Explore the future of digital ownership and how creators are monetizing their content through NFTs. A deep dive into the crypto economy.",
+        "startListening": "Start Listening"
+    },
+    "leadingPodcaster": {
+        "title": "Leading",
+        "subtitle": "Podcaster",
+        "communityTitle": "Build A Community",
+        "communityDesc": "Learn the secrets of building a loyal community around your content. From engagement strategies to monetization, we cover it all.",
+        "episodeCount": "24 Episodes",
+        "description": "Discover the voices shaping the future of audio. Our leading podcasters bring you the most engaging and insightful content from around the globe.",
+        "bestEpisodes": "Best Episodes",
+        "tags": {
+            "dailyLife": "Daily Life",
+            "school": "School",
+            "performer": "Performer",
+            "art": "Art"
+        }
+    },
+    "newsletter": {
+        "ctaTitle": "Start Your Conversation Journey!",
+        "getStarted": "Get Started",
+        "learnMore": "Learn More",
+        "title": "Subscribe For",
+        "subtitle": "Latest Updates",
+        "description": "Join our community of 100k+ listeners and never miss an episode. Get exclusive content and early access.",
+        "placeholder": "Enter your email",
+        "button": "Subscribe"
+    },
+    "latestEpisodes": {
+        "title": "Latest",
+        "subtitle": "Episodes",
+        "filters": {
+            "all": "All",
+            "business": "Business",
+            "tech": "Tech",
+            "design": "Design"
+        },
+        "items": {
+            "ep1": {
+                "title": "Product Design",
+                "category": "Design",
+                "date": "Sep 28, 2025",
+                "duration": "45 min"
+            },
+            "ep2": {
+                "title": "Music Theory",
+                "category": "Music",
+                "date": "Sep 29, 2025",
+                "duration": "32 min"
+            },
+            "ep3": {
+                "title": "Tech Trends",
+                "category": "Technology",
+                "date": "Sep 30, 2025",
+                "duration": "55 min"
+            }
+        }
+    },
+    "artistHighlight": {
+        "title": "Artist Highlight",
+        "subtitle": "Of The Week",
+        "description": "The creative minds behind your favorite episodes. Our team of dedicated professionals brings you the best content every week.",
+        "items": {
+            "artist1": {
+                "name": "John Doe",
+                "role": "Host & Producer"
+            },
+            "artist2": {
+                "name": "Jane Smith",
+                "role": "Tech Specialist"
+            },
+            "artist3": {
+                "name": "Joy Unbound",
+                "role": "Comedy Writer"
+            },
+            "artist4": {
+                "name": "Sarah Lee",
+                "role": "Guest"
+            }
+        }
+    },
+    "contact": {
+        "title": "Let's Start A",
+        "subtitle": "Conversation",
+        "description": "Have a question, suggestion, or just want to say hello? We'd love to hear from you. Reach out to us through any of the channels below.",
+        "email": "Email Us",
+        "phone": "Call Us",
+        "location": "Visit Us",
+        "form": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "namePlaceholder": "John",
+            "lastNamePlaceholder": "Doe",
+            "email": "Email Address",
+            "emailPlaceholder": "john@example.com",
+            "subject": "Subject",
+            "subjectPlaceholder": "Select a topic",
+            "subjects": {
+                "collaboration": "Collaboration",
+                "feedback": "Feedback",
+                "support": "Support",
+                "other": "Other"
+            },
+            "message": "Message",
+            "messagePlaceholder": "How can we help you?",
+            "submit": "Send Message"
+        }
+    },
+    "footer": {
+        "terms": "Terms",
+        "sitemap": "Sitemap",
+        "privacy": "Privacy",
+        "copyright": "© 2025 Mutlu Kurt. Licensed under MIT License.",
+        "designedBy": "Designed by Mutlu"
+    },
+    "backToTop": "Back to top"
+}

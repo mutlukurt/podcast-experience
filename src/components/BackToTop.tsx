@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const BackToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const { t } = useTranslation();
 
     // Show button when page is scrolled upto given distance
     const toggleVisibility = () => {
@@ -38,7 +40,7 @@ const BackToTop = () => {
                     transition={{ duration: 0.3 }}
                     onClick={scrollToTop}
                     className="fixed bottom-8 right-8 z-40 bg-black text-yellow-400 p-4 rounded-full shadow-xl hover:bg-gray-900 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2"
-                    aria-label="Back to top"
+                    aria-label={t('backToTop')}
                 >
                     <ArrowUp size={24} strokeWidth={3} />
                 </motion.button>

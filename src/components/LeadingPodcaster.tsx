@@ -1,15 +1,24 @@
+import React from 'react';
 import { Play } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const LeadingPodcaster = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="max-w-7xl mx-auto px-6 py-12 md:px-12">
-            <div className="flex justify-between items-center mb-8">
-                <h2 className="text-4xl font-black uppercase">Our Leading<br />Podcaster</h2>
-                <button className="flex items-center gap-2 bg-orange-400 px-6 py-2 rounded-full font-bold uppercase hover:bg-orange-500 transition-colors">
-                    <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                        <Play size={12} className="text-orange-500 ml-0.5" />
+            <div className="flex justify-between items-end mb-8">
+                <div>
+                    <h2 className="text-4xl font-black uppercase mb-2">{t('leadingPodcaster.title')}<br />{t('leadingPodcaster.subtitle')}</h2>
+                    <p className="text-gray-500 font-medium max-w-md">
+                        {t('leadingPodcaster.description')}
+                    </p>
+                </div>
+                <button className="hidden md:flex items-center gap-2 bg-black text-white px-6 py-2 rounded-full font-bold uppercase hover:bg-gray-800 transition-colors">
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                        <Play size={16} className="text-black ml-1" />
                     </div>
-                    Start Listening
+                    {t('hero.startListening')}
                 </button>
             </div>
 
@@ -24,10 +33,10 @@ const LeadingPodcaster = () => {
 
                 <div className="flex flex-col gap-8 p-4">
                     <div>
-                        <p className="text-sm font-bold uppercase text-gray-500 mb-2">24 Episodes</p>
-                        <h3 className="text-4xl font-black uppercase mb-4">Build A<br />Community</h3>
+                        <p className="text-sm font-bold uppercase text-gray-500 mb-2">{t('leadingPodcaster.episodeCount')}</p>
+                        <h3 className="text-4xl font-black uppercase mb-4">{t('leadingPodcaster.communityTitle')}</h3>
                         <p className="text-gray-600 leading-relaxed">
-                            Learn the secrets of building a loyal community around your content. From engagement strategies to monetization, we cover it all.
+                            {t('leadingPodcaster.communityDesc')}
                         </p>
                     </div>
 
